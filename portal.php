@@ -139,9 +139,9 @@ if (isset($_POST['upload'])){
         </div>
     </div>
     <script>
-        function upload_anime(file_btn, file_span){
+        function upload_anime(file_btn, file_input){
             const actualBtn = document.getElementById(file_btn);
-            const fileChosen = document.getElementById(file_span);
+            const fileChosen = document.getElementById(file_input);
 
             actualBtn.addEventListener('change', function(){
                 fileChosen.value = this.files[0].name

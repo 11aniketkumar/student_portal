@@ -5,6 +5,7 @@ if($_SESSION['name']){
     $post = $_SESSION['post'];
 } else {
     header("Location: index.php");
+    exit();
 }
 
 if(isset($_GET['logout'])){
