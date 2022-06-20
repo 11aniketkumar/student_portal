@@ -1,0 +1,125 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: rgba(237, 228, 241, 0.71);
+}
+
+#navbar{
+    background-color: indigo;
+}
+
+.btn{
+    background-color: indigo;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+}
+
+.btn:hover{
+    background-color: rgb(89, 64, 106);
+}
+
+#container{
+    width: 70%;
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+}
+
+#info{
+    display: flex;
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.data{
+    display: flex;
+    width: 80%;
+}
+
+.data label{
+    display: block;
+    margin: 5px;
+    font-size: 24px;
+}
+
+.photo img{
+    height: 150px;
+    width: 150px;
+    border: 2px solid indigo;
+    border-radius: 50%;
+}
+
+#content{
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+#form_format{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    font-size: 20px;
+    color: indigo;
+    padding: 20px;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 50%;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 50%;
+}
+
+#form_format label{
+    background-color: indigo;
+    color: white;
+    padding: 6px;
+    border-radius: 5px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+#form_format label:hover{
+    background-color: rgb(104, 4, 175);
+}
+
+.upload_style input{
+    font-size: 20px;
+    padding: 3px;
+    margin:  5px 15px;
+}
+
+.btn2{
+    background-color: indigo;
+    color: white;
+    padding: 10px 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.btn2:hover{
+    background-color: rgb(104, 4, 175);
+}

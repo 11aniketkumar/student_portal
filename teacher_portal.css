@@ -1,0 +1,109 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgba(237, 228, 241, 0.71);
+}
+
+#navbar{
+    background-color: indigo;
+}
+
+.btn{
+    background-color: indigo;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+}
+
+.btn:hover{
+    background-color: rgb(89, 64, 106);
+}
+
+#container{
+    width: 80%;
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+}
+
+#info{
+    display: flex;
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.data{
+    display: flex;
+    width: 80%;
+}
+
+.data label{
+    display: block;
+    margin: 5px;
+    font-size: 24px;
+}
+
+.photo img{
+    height: 150px;
+    width: 150px;
+    border: 2px solid indigo;
+    border-radius: 50%;
+}
+
+
+#content{
+    margin: 20px;
+}
+
+table{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+}
+
+th{
+    background-color: rgb(150, 80, 201);
+    color: white;
+    padding: 6px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+td{
+    background-color: white;
+    padding: 4px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.hidden_input{
+    width: 0px;
+    opacity: 0;
+}
+
+.span_display{
+    display: flex;
+    margin: 0px 30px;
+    float: right;
+}
+
+.btn2{
+    background-color: indigo;
+    color: white;
+    font-size: 19px;
+    padding: 5px 8px;
+    border: none;
+}
+
+.btn2:hover{
+    background-color: rgb(150, 117, 173);
+    cursor: pointer;
+}
