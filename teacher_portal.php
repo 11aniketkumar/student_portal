@@ -50,22 +50,21 @@ if(isset($_GET['transfer'])){
 if(isset($_GET['approve'])){
     include 'connection.php';
     $sno = $_GET['sno']; 
-    $post_array = ['PROCTOR','HOD','PRINCIPAL','OFFICE'];
+    $post_array = ['PROCTOR','HOD','PRINCIPAL','OFFICE','STATUS'];
     $index = array_search($post, $post_array);
     $new_index = $index + 1;
+    $element = $post_array[$new_index];
 
-    $sql = "UPDATE student SET " . $post . "=1 WHERE SNO=" . $sno . ";";
+    $sql = "UPDATE student SET " . $post . "=1, " . $element . "=0 WHERE SNO=" . $sno . ";";
 
     mysqli_query($con, $sql);
 
     if($post=='OFFICE'){
-        echo "<script>alert('Application closed successfully.');</script>";
-    } else {
-        $element = $post_array[$new_index];
-        $sql = "UPDATE student SET " . $element . "=0 WHERE SNO=" . $sno . ";";
+        $sql = "INSERT INTO closed (SNO, NAME, PHONE)
+        SELECT SNO, NAME, PHONE FROM student WHERE SNO=". $sno .";";
         mysqli_query($con, $sql);
+        echo "<script>alert('Application closed successfully.');</script>";
     }
-    
     mysqli_close($con);
 }
 

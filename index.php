@@ -26,13 +26,12 @@ if(isset($_POST['signup'])){
         } else {
             echo '<script>alert("Sign Up failed. Please try again.");</script>';
         }
+        // Close the database connection
+        mysqli_close($con);
 
     } else {
         echo '<script>alert("Password does not match")</script>';
     }
-
-    // Close the database connection
-    mysqli_close($con);
 }
 
 
@@ -70,7 +69,7 @@ if(isset($_POST['login'])){
                 } else {
                     session_unset();
                     session_destroy();
-                    echo "<script>alert('Your documents had been uploaded and they are still under process of verification.');
+                    echo "<script>alert('Your documents had been already uploaded.');
                     window.location.href = 'index.php';
                     </script>;";
                 }
