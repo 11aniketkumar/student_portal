@@ -9,6 +9,8 @@ body{
 
 #navbar{
     background-color: indigo;
+    display: flex;
+    gap: 10px;
 }
 
 .btn{

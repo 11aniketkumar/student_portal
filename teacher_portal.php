@@ -101,6 +101,9 @@ if(isset($_GET['reject'])){
         <form method="get">
             <input class="btn" type="submit" name="logout" value="Log Out">
         </form>
+        <form action="view_closed.php">
+            <input class="btn" type="submit" value="Closed Application">
+        </form>
     </div>
     <div id="container">
         <div id="info">

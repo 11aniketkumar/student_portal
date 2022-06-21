@@ -88,7 +88,7 @@ if (isset($_POST['upload'])){
         </div>
         <div id="content">
             <form id="form_format" method="POST" enctype="multipart/form-data">
-                <div class="left">
+                <div class="column">
                     <div>
                         Aadhaar Card: 
                         <div class="upload_style">
@@ -111,7 +111,7 @@ if (isset($_POST['upload'])){
                         </div>
                     </div>
                 </div>
-                <div class="right">
+                <div class="column">
                     <div>
                         Study Certificate: 
                         <div class="upload_style">

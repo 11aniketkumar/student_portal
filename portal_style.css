@@ -78,19 +78,12 @@ body{
     padding: 20px;
 }
 
-.left{
+.column{
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    width: 50%;
+    gap: 30px;
 }
 
-.right{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    width: 50%;
-}
 
 #form_format label{
     background-color: indigo;
