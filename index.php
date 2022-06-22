@@ -17,7 +17,13 @@ if(isset($_POST['signup'])){
         if($rank=='student'){
             $sql = "INSERT INTO student (NAME, EMAIL, PHONE, PASSWORD) VALUES ('$name', '$email', '$phone', '$hash');";
         } else {
-            $sql = "INSERT INTO teacher (NAME, EMAIL, PHONE, PASSWORD, POST) VALUES ('$name', '$email', '$phone', '$hash', '$rank');";
+            $pin = $_POST['teacher_check'];
+            if($pin == "1234"){
+                $sql = "INSERT INTO teacher (NAME, EMAIL, PHONE, PASSWORD, POST) VALUES ('$name', '$email', '$phone', '$hash', '$rank');";
+            } else {
+                echo "<script>alert('Invalid Pin entered.');
+                window.location.href = 'index.php';</script>";
+            }
         }
 
         // Execute the query
@@ -100,16 +106,6 @@ if(isset($_POST['login'])){
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- <div id="navbar">
-        <a href="home.html"><button class="btn">Home</button></a>
-        <a href="downloads.html"><button class="btn">Downloads</button></a>
-        <a href="contacts.html"><button class="btn">Contacts</button></a>
-        <a href="help.html"><button class="btn">Help</button></a>
-        <span class="search_engine">
-            <input class="search_box" type="text">
-            <input class="search_btn" type="button" value="Search">
-        </span>
-    </div> -->
     <div id="container">
         <div id="login">
             <h1>LOGIN</h1>
@@ -126,21 +122,30 @@ if(isset($_POST['login'])){
         <div id="signup">
             <h1>SIGN UP</h1>
             <form class="form_align" method="post">
-                <label class="form_label2">Name</label> <input class="input_box2" type="text" name="name" id="name" maxlength="30" required>
-                <label class="form_label2">Email</label> <input class="input_box2" type="text" name="email" id="email" maxlength="50" required>
-                <label class="form_label2">Phone</label> <input class="input_box2" type="number" name="phone" id="phone" required>
-                <label class="form_label2">Password</label> <input class="input_box2" type="password" name="password" id="password" required>
-                <label class="form_label2">Confirm Password</label> <input class="input_box2" type="password" name="c_password" id="c_password" required>
-                <br>
-                <select class="input_box2" name="rank">
+                <input class="input_box2" type="text" name="name" id="name" maxlength="30" placeholder="Enter your Name" required>
+                <input class="input_box2" type="text" name="email" id="email" maxlength="50" placeholder="Enter your Email" required>
+                <input class="input_box2" type="number" name="phone" id="phone" placeholder="Enter your Phone Number" required>
+                <input class="input_box2" type="password" name="password" id="password" placeholder="Enter Password" required>
+                <input class="input_box2" type="password" name="c_password" id="c_password" placeholder="Confirm Password" required>
+                <select class="input_box2" name="rank" onchange="student_check(this);">
                     <option value="student">Student</option>
                     <option value="PROCTOR">Proctor</option>
                     <option value="HOD">HOD</option>
                     <option value="OFFICE">Office</option>
                 </select>
+                <input class="input_box2" type="password" name="teacher_check" id="teacher_check"  style="display: none;" placeholder="Please insert university pin">
                 <input class="btn2" type="submit" name="signup" value="Sign Up">
             </form>
         </div>
     </div>
+    <script>
+        function student_check(that){
+            if(that.value=="student"){
+                document.getElementById('teacher_check').style.display = "none";
+            } else {
+                document.getElementById('teacher_check').style.display = "block";
+            }
+        }
+    </script>
 </body>
 </html>
