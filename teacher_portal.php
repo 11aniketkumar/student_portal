@@ -129,6 +129,7 @@ if(isset($_GET['reject'])){
             <table>
                 <tr>
                     <th style="width:50%">NAME</th>
+                    <th>FILES</th>
                     <th>CONTROLS</th>
                 </tr>
                 <?php
@@ -149,9 +150,13 @@ if(isset($_GET['reject'])){
                                     <input class="btn2" type="submit" name="bonafide" value="Bonafide">
                                     <input class="btn2" type="submit" name="tenth" value="Tenth">
                                     <input class="btn2" type="submit" name="twealth" value="Twealth">
-                                    <input class="btn2" type="submit" name="transfer" value="Transfer"> -
-                                    <input class="btn2" type="submit" name="approve" value="Approve">
-                                    <input class="btn2" type="submit" name="reject" value="Reject">
+                                    <input class="btn2" type="submit" name="transfer" value="Transfer">
+                                </span>
+                            </td>
+                            <td>
+                                <span class="span_display">
+                                    <input class="btn3" type="submit" name="approve" value="Approve">
+                                    <input class="btn4" type="submit" name="reject" value="Reject">
                                 </span>
                             </td>
                         </form>

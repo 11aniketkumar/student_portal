@@ -73,11 +73,7 @@ if(isset($_POST['login'])){
                 if($data["PROCTOR"] == -1){
                     header("Location: portal.php");
                 } else {
-                    session_unset();
-                    session_destroy();
-                    echo "<script>alert('Your documents had been already uploaded.');
-                    window.location.href = 'index.php';
-                    </script>;";
+                    header("Location: student_status.php");
                 }
             } else {
                 $_SESSION['post'] = $data["POST"];

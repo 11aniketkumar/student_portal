@@ -93,12 +93,14 @@ td{
 
 .span_display{
     display: flex;
-    margin: 0px 30px;
+    margin: 0px 20px;
     float: right;
+    gap: 4px;
 }
 
 .btn2{
     background-color: indigo;
+    border-radius: 5px;
     color: white;
     font-size: 19px;
     padding: 5px 8px;
@@ -107,5 +109,33 @@ td{
 
 .btn2:hover{
     background-color: rgb(150, 117, 173);
+    cursor: pointer;
+}
+
+.btn3{
+    background-color: rgb(90, 211, 90);
+    border-radius: 5px;
+    color: white;
+    font-size: 19px;
+    padding: 5px 8px;
+    border: none;
+}
+
+.btn3:hover{
+    background-color: green;
+    cursor: pointer;
+}
+
+.btn4{
+    background-color: rgb(224, 71, 71);
+    border-radius: 5px;
+    color: white;
+    font-size: 19px;
+    padding: 5px 8px;
+    border: none;
+}
+
+.btn4:hover{
+    background-color: red;
     cursor: pointer;
 }

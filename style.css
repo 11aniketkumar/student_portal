@@ -10,7 +10,7 @@ body{
 
 #container{
     height: 600px;
-    width: 80%;
+    width: 70%;
     margin: 50px auto;
     display: flex;
 }
@@ -53,7 +53,7 @@ body{
 }
 
 #signup h1{
-    margin: 15px auto;
+    margin: 20px auto;
     text-align: center;
     font-size: 50px;
     letter-spacing: 10px;
@@ -68,7 +68,7 @@ body{
 .input_box{
     font-size: 18px;
     padding: 4px 5px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     font-weight: bold;
     border-radius: 5px;
 }

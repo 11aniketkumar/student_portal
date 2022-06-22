@@ -90,7 +90,7 @@ if (isset($_POST['upload'])){
             <form id="form_format" method="POST" enctype="multipart/form-data">
                 <div class="column">
                     <div>
-                        Aadhaar Card: 
+                        Aadhaar Card *: 
                         <div class="upload_style">
                             <input type="file" name="aadhaar" id="aadhaar" hidden required>
                             <input type="text" id="aadhaar_chosen" value="No file chosen" disabled><label for="aadhaar">Choose File</label>
@@ -99,12 +99,12 @@ if (isset($_POST['upload'])){
                     <div>
                         Bonafide Certificate: 
                         <div class="upload_style">
-                            <input type="file" name="bonafide" id="bonafide" hidden required>
+                            <input type="file" name="bonafide" id="bonafide" hidden>
                             <input type="text" id="bonafide_chosen" value="No file chosen" disabled><label for="bonafide">Choose File</label>
                         </div>
                     </div>
                     <div>
-                        X Marks Card: 
+                        X Marks Card *: 
                         <div class="upload_style">
                             <input type="file" name="tenth" id="tenth" hidden required>
                             <input type="text" id="tenth_chosen" value="No file chosen" disabled><label for="tenth">Choose File</label>
@@ -113,7 +113,7 @@ if (isset($_POST['upload'])){
                 </div>
                 <div class="column">
                     <div>
-                        Study Certificate: 
+                        Study Certificate *: 
                         <div class="upload_style">
                             <input type="file" name="study" id="study" hidden required>
                             <input type="text" id="study_chosen" value="No file chosen" disabled><label for="study">Choose File</label>
@@ -122,12 +122,12 @@ if (isset($_POST['upload'])){
                     <div>
                         Transfer Certificate: 
                         <div class="upload_style">
-                            <input type="file" name="transfer" id="transfer" hidden required>
+                            <input type="file" name="transfer" id="transfer" hidden>
                             <input type="text" id="transfer_chosen" value="No file chosen" disabled><label for="transfer">Choose File</label>
                         </div>
                     </div>
                     <div>
-                        XII Marks Card: 
+                        XII Marks Card *: 
                         <div class="upload_style">
                             <input type="file" name="twealth" id="twealth" hidden required>
                             <input type="text" id="twealth_chosen" value="No file chosen" disabled><label for="twealth">Choose File</label>
