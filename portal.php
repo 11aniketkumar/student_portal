@@ -42,12 +42,9 @@ if (isset($_POST['upload'])){
     mysqli_query($con, $sql);
 
     mysqli_close($con);
-    session_unset();
-    session_destroy();
     
     echo "<script>alert('Documents uploaded successfully.');
-    window.location.href = 'index.php';</script>";
-    
+    window.location.href = 'student_status.php';</script>";
 }
 
 ?>

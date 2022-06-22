@@ -88,3 +88,16 @@ body{
     margin: 15px;
     font-size: 30px;
 }
+
+.btn2{
+    background-color: indigo;
+    color: white;
+    padding: 10px 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.btn2:hover{
+    background-color: rgb(104, 4, 175);
+}

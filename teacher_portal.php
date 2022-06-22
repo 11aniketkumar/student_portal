@@ -73,7 +73,7 @@ if(isset($_GET['reject'])){
     include 'connection.php';
     $sno = $_GET['sno'];
 
-    $sql = "UPDATE student SET PROCTOR = -1, HOD = -1, PRINCIPAL = -1, OFFICE = -1 WHERE SNO = " . $sno . ";";
+    $sql = "UPDATE student SET " . $post . "=-2 WHERE SNO=" . $sno . ";";
     mysqli_query($con, $sql);
 
     echo "<script>alert('Application Rejected.');</script>";

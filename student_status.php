@@ -17,9 +17,20 @@ if (isset($_GET['logout'])){
 function status_output($num){
     if($num==1){
         echo "Approved";
+    } elseif($num == -2) {
+        echo "Rejected";
     } else {
         echo "Pending";
     }
+}
+
+if(isset($_GET['reupload'])){
+    include 'connection.php';
+
+    $sql = "UPDATE student SET PROCTOR = -1, HOD = -1, PRINCIPAL = -1, OFFICE = -1 WHERE SNO = " . $SNO . ";";
+    mysqli_query($con, $sql);
+    mysqli_close($con);
+    header("Location: portal.php");
 }
 
 ?>
@@ -83,6 +94,11 @@ function status_output($num){
                     <label><?php status_output($data['PRINCIPAL']) ?></label>
                     <label><?php status_output($data['OFFICE']) ?></label>
                 </div>
+            </div>
+            <div>
+                <form method="get">
+                    <input class="btn2" type="submit" name="reupload" value="Re-Upload">
+                </form>
             </div>
         </div>
     </div>
