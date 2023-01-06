@@ -1,3 +1,17 @@
+<!--
+//This code is a PHP script that contains a login and signup form for a user. The login form has input fields for the user's email, password, 
+//and rank (either student or teacher). When the user submits the form, the script verifies the email and password by checking the values 
+//stored in the 'student' or 'teacher' table in the database. If the email and password are valid, the user is redirected to the 'portal.php' 
+//or 'teacher_portal.php' page based on their rank. If the email is not found in the database or the password is incorrect, an error message 
+//is displayed.
+
+//The signup form has input fields for the user's name, email, phone, password, and rank. When the user submits the form, the script checks 
+//if the password and confirm password fields match. If they do, it hashes the password using the 'password_hash()' function and stores the 
+//user's information in the 'student' or 'teacher' table based on their rank. If the user's rank is 'teacher', the script also checks for a 
+//valid pin before storing the information in the table. If the password and confirm password fields do not match or the pin is invalid, an 
+//error message is displayed.
+-->
+
 <?php
 if(isset($_POST['signup'])){
     // Collect post variables
