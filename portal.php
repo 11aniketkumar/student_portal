@@ -1,3 +1,13 @@
+<!--
+This PHP script is used to upload and save files to a server and to update a database with the status of file uploads for a user. 
+If the user is not logged in, they will be redirected to the login page. If the user clicks the logout button, the session will be 
+destroyed, and the user will be redirected to the login page. The script has a function called save_file(), which takes a file name 
+as an argument. This function moves the files from the temporary uploaded location to a new permanent location. It does this using 
+the move_uploaded_file() function. When the user clicks the upload button, the script creates a new directory on the server for the 
+user and uses the save_file() function to save the chosen files. It then updates the database to show that the files have been uploaded 
+for the user. If the upload is successful, the user will be redirected to a new page
+-->
+
 <?php
 session_start();
 //checking if session already exists
