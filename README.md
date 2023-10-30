@@ -1,18 +1,47 @@
-# STUDENT PORTAL
+# Student Portal
 
-This was the project that I built for a 5 hour hackathon, the question given to us was to build a site where to students can upload their documents for verification, and proctor should be able to view, reject or forward it to next authority.
+The Student Portal is a web application designed for streamlining the document verification and approval process within an educational institution. It offers a user-friendly interface for students to submit their documents, and for proctors, HODs (Heads of Department), Principals, and office personnel to efficiently manage the document approval workflow.
 
-The application approval process is as follow:
-1. Student creates an account and uploads his documents.
-2. Proctor verifies them and forwards it to HOD(Head of Department).
-3. HOD verifies it and forwards it to Principal.
-4. Principal verifies it and forwards it to office, where office after doing final verification closes the application.
+## Features
 
-This was a fun project because before this project I had no experience in php and javascript, and even if I knew HTML and CSS, my experience was limited to bare minimum. I learnt and improved my skills with these languages within a week before contest.
+- **User Registration:** Students can create accounts to start the document submission process.
+- **Document Upload:** Students can securely upload their documents for verification.
+- **Multi-Step Approval:** The application facilitates multi-step approval, where proctors, HODs, Principals, and office personnel sequentially review and approve documents.
+- **Document Rejection:** At any stage of the approval process, a user can reject the document, and it will be sent back to the previous reviewer for corrections.
+- **Final Verification:** Once documents pass all approval stages, the office personnel perform a final verification before closing the application.
+- **User Roles:** Different user roles (students, proctors, HODs, Principals, office personnel) with specific permissions for each role.
 
-Languages Used:-
-1. HTML
-2. CSS
-3. JAVASCRIPT
-4. PHP
-5. MYSQL
+## Technologies Used
+
+- **PHP:** Backend development and server-side scripting.
+- **MySQL:** Database management system for storing user data and document records.
+- **HTML/CSS:** Frontend technologies for creating user interfaces and styling.
+- **JavaScript:** Client-side scripting for interactive elements and form validations.
+
+
+## Screenshots
+
+**Login Page:**
+
+![Login](https://github.com/11aniketkumar/event_management_system/raw/main/screenshot/registration.png)
+
+**Document Submission Page:**
+
+![Document Submission](https://github.com/11aniketkumar/event_management_system/raw/main/screenshot/upload.png)
+
+**Verification status window:**
+
+![Final Verification](https://github.com/11aniketkumar/event_management_system/raw/main/screenshot/status.png)
+
+**Verification Teacher's window:**
+
+![Final Verification](https://github.com/11aniketkumar/event_management_system/raw/main/screenshot/teacher_portal.png)
+
+**Closed Application window:**
+
+![Closed Application](https://github.com/11aniketkumar/event_management_system/raw/main/screenshot/closed_application.png)
+
+## Contributors
+
+- Aniket Kumar
+- Team Members: Dakshith Gowda and Sai Ram
