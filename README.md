@@ -23,23 +23,23 @@ The Student Portal is a web application designed for streamlining the document v
 
 **Login Page:**
 
-![Login](https://github.com/11aniketkumar/event_management_system/raw/main/screenshot/registration.png)
+![Login](https://github.com/11aniketkumar/student_portal/raw/main/screenshot/registration.png)
 
 **Document Submission Page:**
 
-![Document Submission](https://github.com/11aniketkumar/event_management_system/raw/main/screenshot/upload.png)
+![Document Submission](https://github.com/11aniketkumar/student_portal/raw/main/screenshot/upload.png)
 
 **Verification status window:**
 
-![Final Verification](https://github.com/11aniketkumar/event_management_system/raw/main/screenshot/status.png)
+![Final Verification](https://github.com/11aniketkumar/student_portal/raw/main/screenshot/status.png)
 
 **Verification Teacher's window:**
 
-![Final Verification](https://github.com/11aniketkumar/event_management_system/raw/main/screenshot/teacher_portal.png)
+![Final Verification](https://github.com/11aniketkumar/student_portal/raw/main/screenshot/teacher_portal.png)
 
 **Closed Application window:**
 
-![Closed Application](https://github.com/11aniketkumar/event_management_system/raw/main/screenshot/closed_application.png)
+![Closed Application](https://github.com/11aniketkumar/student_portal/raw/main/screenshot/closed_application.png)
 
 ## Contributors
 
